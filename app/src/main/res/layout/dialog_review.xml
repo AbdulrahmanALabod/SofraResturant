@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/dim_16"
+    android:layout_marginEnd="@dimen/dim_16"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/txt_stumb_dilog_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/chose_your_rate"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <LinearLayout
+        android:id="@+id/root_imoge_dilog_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_stumb_dilog_review"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dim_16"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/img_angry_dialog_review"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_angry_regular" />
+
+        <ImageView
+            android:id="@+id/img_sad_dialog_review"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_sad_regular" />
+
+        <ImageView
+            android:id="@+id/img_happy_dialog_review"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_smile_regular" />
+
+        <ImageView
+            android:id="@+id/img_laugh_dialog_review"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_laugh_beam_regular" />
+
+        <ImageView
+            android:id="@+id/img_love_dialog_review"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_in_love_regular" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_comment_dilog_review"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_100"
+        android:layout_below="@id/root_imoge_dilog_review"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dim_16"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/dim_16"
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="comment here"
+        android:inputType="textPersonName"
+        android:paddingStart="@dimen/dim_8" />
+
+    <Button
+        android:id="@+id/btn_add_comment_dilog_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_comment_dilog_review"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dim_16"
+        android:layout_marginBottom="@dimen/dim_16"
+        android:background="@drawable/btn_splach_background"
+        android:text="@string/add"
+        android:textColor="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_back"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dim_16"
+    android:paddingTop="@dimen/dim_16"
+    android:paddingEnd="@dimen/dim_16">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/about"
+        android:textColor="@color/third_color_text"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_250"
+        android:background="@drawable/edit_text_background"
+        android:elevation="5dp"
+        android:outlineSpotShadowColor="#000"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/dim_8"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:layout_marginTop="@dimen/dim_25"
+            android:text="there are fact is sya you should saw to sky and
+count noumber of stars that must in billion diffrent in distens between us " />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

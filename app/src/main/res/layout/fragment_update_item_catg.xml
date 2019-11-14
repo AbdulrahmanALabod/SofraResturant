@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dim_16">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_caption_img_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/add_image_for_product"
+                android:textColor="@color/third_color_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:layout_width="@dimen/dim_150"
+                android:layout_height="@dimen/dim_150"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_main_update_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/album_ic_add_photo_white" />
+                </LinearLayout>
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <EditText
+                android:id="@+id/edt_name_update_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="@string/product_name"
+                android:inputType="textPersonName"
+                android:padding="@dimen/dim_16" />
+
+            <EditText
+                android:id="@+id/edt_desc_update_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_150"
+                android:layout_marginTop="@dimen/dim_16"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/description"
+                android:inputType="textPersonName"
+                android:padding="@dimen/dim_16" />
+
+            <EditText
+                android:id="@+id/edt_price_update_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="@string/price"
+                android:inputType="textPersonName"
+                android:padding="@dimen/dim_16" />
+
+            <EditText
+                android:id="@+id/edt_offer_price_update_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="@string/offer_price"
+                android:inputType="textPersonName"
+                android:padding="@dimen/dim_16" />
+
+            <EditText
+                android:id="@+id/edt_priod_delvary_update_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="Period prepareing"
+                android:inputType="textPersonName"
+                android:padding="@dimen/dim_16" />
+
+            <Button
+                android:id="@+id/btn_send_update_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_16"
+                android:layout_marginBottom="@dimen/dim_16"
+                android:background="@drawable/btn_splach_background"
+                android:paddingStart="@dimen/dim_50"
+                android:paddingEnd="@dimen/dim_50"
+                android:text="@string/send"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

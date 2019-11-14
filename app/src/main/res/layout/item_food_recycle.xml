@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="16dp"
+app:cardCornerRadius="@dimen/dim_8"
+android:elevation="@dimen/dim_4">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:id="@+id/img_food_recycl_food"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_120"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dim_8"
+        android:paddingStart="@dimen/dim_8"
+        android:paddingLeft="@dimen/dim_8"
+        >
+        <TextView
+            android:id="@+id/txt_name_recycl_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="fjsfjmdksfgdl;s"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            />
+        <TextView
+            android:id="@+id/txt_desc_recycl_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="card_content"
+            android:textColor="#555" />
+        <TextView
+            android:id="@+id/txt_price_recycl_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="card_content"
+            android:textColor="#555" />
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+

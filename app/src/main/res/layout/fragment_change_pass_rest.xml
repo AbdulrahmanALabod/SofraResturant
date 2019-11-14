@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginEnd="@dimen/dim_16"
+        android:layout_marginStart="@dimen/dim_16">
+
+        <EditText
+            android:id="@+id/edt_old_chng_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            android:hint="@string/enter_your_old_password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/dim_8"
+            android:paddingTop="@dimen/dim_16"
+            android:paddingBottom="@dimen/dim_16" />
+
+        <EditText
+            android:id="@+id/edt_new_pass_chng_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            android:hint="@string/enter_your_new_password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/dim_8"
+            android:paddingTop="@dimen/dim_16"
+            android:paddingBottom="@dimen/dim_16" />
+
+        <EditText
+            android:id="@+id/edt_confirm_new_chng_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            android:hint="@string/enter_confirm_your_new_password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/dim_8"
+            android:paddingTop="@dimen/dim_16"
+            android:paddingBottom="@dimen/dim_16" />
+
+        <Button
+            android:id="@+id/btn_change_chng_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@drawable/btn_splach_background"
+            android:text="@string/change"
+            android:textColor="@color/white"
+            android:paddingStart="@dimen/dim_50"
+            android:paddingEnd="@dimen/dim_50"/>
+    </LinearLayout>
+</ScrollView>

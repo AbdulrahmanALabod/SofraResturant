@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.abdulrohman.sofraresturant">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".ui.activity.UserCycleActivity"
+            android:label="@string/title_activity_user"
+            android:theme="@style/NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".ui.activity.HomeCycleActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_home_cycle"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.activity.SpalchCycleActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.BaseActivity"></activity>
+    </application>
+
+</manifest>

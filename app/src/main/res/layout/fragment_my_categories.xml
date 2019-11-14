@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/expirment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_cateogries"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="@dimen/dim_8"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container_my_catg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+        android:layout_marginTop="@dimen/dim_8"
+        layout="@layout/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></include>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_mycatgory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/ic_plus_solid"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="@dimen/dim_16"
+        android:layout_marginEnd="@dimen/dim_8"
+
+        />
+
+</android.support.design.widget.CoordinatorLayout>

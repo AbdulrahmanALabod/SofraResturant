@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e9e9e9"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/dim_16"
+    android:layout_marginEnd="@dimen/dim_16"
+    android:paddingTop="@dimen/dim_16"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_resoan"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edt_reson_cancel_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_150"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/please_enter_here_your_reason"
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@color/white"
+        android:layout_marginEnd="@dimen/dim_8"
+        android:layout_marginStart="@dimen/dim_8"
+        android:gravity="top"
+        android:paddingTop="@dimen/dim_8"
+        android:paddingStart="@dimen/dim_8"
+        android:layout_marginTop="@dimen/dim_16"
+        />
+
+    <Button
+        android:id="@+id/btn_send_reson_cancel_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_marginTop="@dimen/dim_16"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_splach_background"
+        android:layout_marginEnd="@dimen/dim_16"
+        android:layout_marginStart="@dimen/dim_16"
+        android:layout_marginBottom="@dimen/dim_16"/>
+</LinearLayout>

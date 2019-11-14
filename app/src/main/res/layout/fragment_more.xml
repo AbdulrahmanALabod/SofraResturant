@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="More"
+            android:textColor="@color/third_color_text"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_16"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:paddingTop="@dimen/dim_4"
+                app:srcCompat="@drawable/ic_gift_solid" />
+
+            <TextView
+                android:id="@+id/txt_offer_more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:paddingStart="@dimen/dim_4"
+                android:text="@string/offer"
+                android:textColor="@color/third_color_text"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@color/grey"
+            android:text="" />
+        <!--  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_16"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:paddingTop="@dimen/dim_4"
+                app:srcCompat="@drawable/ic_envelope_square_solid_black" />
+
+            <TextView
+                android:id="@+id/txt_connect_us_more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:paddingStart="@dimen/dim_4"
+                android:text="@string/connect_us"
+                android:textColor="@color/third_color_text"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@color/grey"
+            android:text="" />
+        <!--  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_16"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:paddingTop="@dimen/dim_4"
+                app:srcCompat="@drawable/ic_lightbulb_regular" />
+
+            <TextView
+                android:id="@+id/txt_about_app_more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:paddingStart="@dimen/dim_4"
+                android:text="@string/about"
+                android:textColor="@color/third_color_text"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+                        android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@color/grey"
+            android:text="" />
+        <!--  -->
+        <!--  -->
+        <LinearLayout
+            android:id="@+id/liner_comment_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_16"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:paddingTop="@dimen/dim_4"
+                app:srcCompat="@drawable/ic_star_solid" />
+
+            <TextView
+                android:id="@+id/txt_comment_more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:paddingStart="@dimen/dim_4"
+                android:text="@string/comment"
+                android:textColor="@color/third_color_text"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_line_more2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@color/grey"
+            android:text="" />
+        <!--  -->
+        <!--  -->
+        <LinearLayout
+            android:id="@+id/liner_chag_pass_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_16"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:paddingTop="@dimen/dim_4"
+                app:srcCompat="@drawable/ic_lock_black" />
+
+            <TextView
+                android:id="@+id/txt_chang_pass_app_more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:paddingStart="@dimen/dim_4"
+                android:text="@string/change_pass"
+                android:textColor="@color/third_color_text"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_line_more3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@color/grey"
+            android:text="" />
+        <!--  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_16"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:paddingTop="@dimen/dim_4"
+                app:srcCompat="@drawable/ic_sign_out_alt_solid" />
+
+            <TextView
+                android:id="@+id/txt_log_out_more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:paddingStart="@dimen/dim_4"
+                android:text="@string/sign_out"
+                android:textColor="@color/third_color_text"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--  -->
+    </LinearLayout>
+</ScrollView>

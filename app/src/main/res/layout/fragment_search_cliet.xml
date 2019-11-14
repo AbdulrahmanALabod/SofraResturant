@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/button_backgrond_red_redius"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_16"
+        android:orientation="horizontal"
+        android:padding="@dimen/dim_8"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:layout_weight="0.5"
+            android:background="@drawable/edit_text_background"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            >
+
+            <EditText
+                android:id="@+id/edt_search_rest_client"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/img_search_search_rest_client"
+                android:background="@null"
+                android:drawablePadding="@dimen/dim_8"
+                android:ems="10"
+                android:gravity="center|start"
+                android:hint="Search on your favorit food"
+                android:inputType="textPersonName"
+                android:padding="@dimen/dim_8"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/img_search_search_rest_client"
+                app:srcCompat="@drawable/ic_search_solid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:padding="@dimen/dim_8" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:layout_weight="0.5"
+            android:background="@drawable/edit_text_background"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+
+            >
+
+            <Spinner
+                android:id="@+id/spin_city_search_rest_client"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:spinnerMode="dropdown"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_select_city_search_rest_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dim_8"
+                app:srcCompat="@drawable/ic_arrow_down_solid" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_search"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycl_search_rest_client"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dim_16"
+        android:layout_weight="0.5" >
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

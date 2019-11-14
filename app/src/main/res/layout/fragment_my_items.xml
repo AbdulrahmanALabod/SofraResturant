@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_name_item_item_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:gravity="center"
+            android:text="Checkin fries"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swip_container_my_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8">
+
+            <include
+                layout="@layout/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></include>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_item_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/dim_8"
+        android:layout_marginBottom="@dimen/dim_16"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_plus_solid" />
+
+</android.support.design.widget.CoordinatorLayout>

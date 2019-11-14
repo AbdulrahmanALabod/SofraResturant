@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    android:id="@+id/swipe_root_my_catg"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:mode="same_level"
+    app:dragEdge="left"
+    android:layout_marginTop="@dimen/dim_16">
+
+    <!-- Your secondary layout here -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/img_edit_ofer_rest_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit_solid"
+                tools:ignore="VectorDrawableCompat"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:paddingStart="@dimen/dim_8"
+                android:paddingEnd="@dimen/dim_8"/>
+
+            <ImageView
+                android:id="@+id/img_trash_offer_rest_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_trash_solid"
+                tools:ignore="VectorDrawableCompat"
+                android:paddingStart="@dimen/dim_8"
+                android:paddingEnd="@dimen/dim_8"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Your main layout here -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/liner_root_my_catg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_16"
+            android:layout_marginEnd="@dimen/dim_16"
+            android:background="@drawable/edit_text_background"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dim_16"
+            android:paddingBottom="@dimen/dim_16"
+            android:weightSum="1">
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_75"
+                android:layout_weight="0.3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_offer_rest_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/o" />
+
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <TextView
+                android:id="@+id/txt_ofer_rest_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:text="Pizza"
+                android:textSize="20sp"
+                android:paddingStart="@dimen/dim_8"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

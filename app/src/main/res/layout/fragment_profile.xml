@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dim_16"
+        android:paddingEnd="@dimen/dim_16"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile_profile"
+            android:layout_width="@dimen/dim_200"
+            android:layout_height="@dimen/dim_200"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dim_8"
+            android:src="@drawable/optimized_placeholder"
+            app:civ_border_width="0.4dp" />
+
+        <EditText
+            android:id="@+id/edt_name_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/ic_user_plus_solid"
+            android:drawablePadding="@dimen/dim_8"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="@dimen/dim_4"
+            android:paddingEnd="0dp"
+            android:paddingTop="@dimen/dim_12"
+            android:paddingBottom="@dimen/dim_12"
+            android:hint="@string/name"
+            android:textColor="#999"
+
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/edt_email_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/ic_envelope_square_solid_black"
+            android:drawablePadding="@dimen/dim_8"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/dim_4"
+            android:paddingEnd="0dp"
+            android:paddingTop="@dimen/dim_12"
+            android:paddingBottom="@dimen/dim_12"
+            android:hint="@string/e_mail"
+            tools:ignore="Autofill"
+            android:textColor="#999"
+            />
+
+        <EditText
+            android:id="@+id/edt_phone_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:background="@drawable/edit_text_background"
+            android:drawablePadding="@dimen/dim_8"
+            android:ems="10"
+            android:inputType="phone"
+            android:paddingStart="@dimen/dim_4"
+            android:paddingTop="@dimen/dim_12"
+            android:paddingEnd="0dp"
+            android:paddingBottom="@dimen/dim_12"
+            android:text="@string/phone"
+            tools:ignore="Autofill,LabelFor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:background="@drawable/edit_text_background"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dim_4"
+            android:paddingEnd="0dp"
+            android:paddingTop="@dimen/dim_12"
+            android:paddingBottom="@dimen/dim_12"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                app:srcCompat="@drawable/ic_home_solid_black"
+                android:contentDescription="@string/spiner_city"/>
+
+            <Spinner
+                android:id="@+id/spnr_city_proile_client"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.92"
+                android:focusable="false"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:background="@drawable/edit_text_background"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dim_4"
+            android:paddingEnd="0dp"
+            android:paddingTop="@dimen/dim_12"
+            android:paddingBottom="@dimen/dim_12"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                app:srcCompat="@drawable/ic_home_solid_black"
+                android:contentDescription="@string/spiner_nighbour"/>
+
+            <Spinner
+                android:id="@+id/spnr_nighboure_proile_client"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.92"
+                android:focusable="false"
+
+                />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_price_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/ic_money_black"
+            android:drawablePadding="@dimen/dim_8"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingStart="@dimen/dim_4"
+            android:paddingEnd="0dp"
+            android:paddingTop="@dimen/dim_12"
+            android:paddingBottom="@dimen/dim_12"
+            android:hint="@string/price"
+            tools:ignore="Autofill" />
+
+
+
+        <Button
+            android:id="@+id/btn_modify_proile_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="@dimen/dim_50"
+            android:paddingEnd="@dimen/dim_50"
+            android:background="@drawable/btn_splach_background"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dim_16"
+            android:text="@string/modify"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

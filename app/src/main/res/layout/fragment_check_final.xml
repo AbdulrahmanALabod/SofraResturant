@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/dim_8"
+    android:layout_marginEnd="@dimen/dim_8"
+    android:layout_marginTop="@dimen/dim_8"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:gravity="center"
+            android:text="@string/detail_order"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_add_note_final_check"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_200"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textPersonName"
+            android:padding="@dimen/dim_8"
+            android:hint="@string/add_notes" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:text="@string/adress_destintion"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_adress_check_final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_4"
+            android:hint="Adress"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:text="@string/pay"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_4"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paiement_when_recieving" />
+
+                <ImageView
+                    android:id="@+id/img_check_check_final"
+                    android:layout_width="@dimen/dim_35dp"
+                    android:layout_height="@dimen/dim_35dp"
+                    android:layout_marginStart="@dimen/dim_16"
+                    android:layout_marginTop="@dimen/dim_4"
+                    android:background="@drawable/button_backgrond_white"
+                    android:padding="@dimen/dim_4"
+                    android:src="@drawable/album_ic_done_white"
+                    app:srcCompat="@drawable/ic_check"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/dim_8">
+
+                <TextView
+                    android:id="@+id/txt_onlin_check_final"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="online" />
+
+                <ImageView
+                    android:id="@+id/img_online_final_check"
+                    android:layout_width="@dimen/dim_35dp"
+                    android:layout_height="@dimen/dim_35dp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/dim_4"
+                    android:background="@drawable/button_backgrond_white"
+                    android:padding="@dimen/dim_4"
+
+                     />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:background="@drawable/edit_text_background"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dim_8"
+            android:paddingBottom="@dimen/dim_8">
+
+            <TextView
+                android:id="@+id/txt_price_final_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:text="@string/price" />
+
+            <TextView
+                android:id="@+id/txt_charger_final_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:text="@string/charger" />
+
+            <TextView
+                android:id="@+id/txt_all_price_final_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:text="all_price" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm_order_final_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_marginBottom="@dimen/dim_8"
+            android:background="@drawable/btn_splach_background"
+            android:paddingStart="@dimen/dim_50"
+            android:paddingEnd="@dimen/dim_50"
+            android:text="Confirm Order"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/dim_8"
+    android:layout_marginStart="@dimen/dim_8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Commission"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_marginTop="@dimen/dim_16"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_commissiom"
+        android:textSize="20sp"
+        android:textColor="#222"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="@dimen/dim_16"/>
+
+    <TextView
+        android:id="@+id/txt_restaurant_commission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restaurant commission 5500 $"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/dim_50"
+        android:textColor="#222"
+        />
+
+    <TextView
+        android:id="@+id/txt_app_commission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App commission 550 $"
+        android:layout_marginTop="@dimen/dim_8"
+        android:textSize="18sp"
+        android:textColor="#222"/>
+
+    <TextView
+        android:id="@+id/txt_have_paying_commission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="have paying 300$"
+        android:layout_marginTop="@dimen/dim_8"
+        android:textSize="18sp"
+        android:textColor="#222"/>
+
+    <TextView
+        android:id="@+id/txt_remind_commission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="remaind 250$"
+        android:layout_marginTop="@dimen/dim_8"
+        android:textSize="18sp"
+        android:textColor="#222"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dim_35dp">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الراجحي 124365"
+            android:layout_marginTop="@dimen/dim_8"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الاهلي568709"
+            android:layout_marginTop="@dimen/dim_8"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sofra"
+            android:layout_marginTop="@dimen/dim_8"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>

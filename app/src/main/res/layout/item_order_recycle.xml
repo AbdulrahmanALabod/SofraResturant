@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dim_16"
+    android:layout_marginTop="@dimen/dim_16"
+    android:layout_marginEnd="@dimen/dim_16"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dim_8"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_rest_order"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_130dp"
+            android:layout_weight="0.3"
+            android:src="@drawable/kfc"
+            app:civ_border_width="0.4dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_name_rest_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dim_4"
+                android:paddingTop="@dimen/dim_4"
+                android:paddingBottom="@dimen/dim_4"
+                android:text="Chiken KFC"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_num_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dim_4"
+                android:paddingTop="@dimen/dim_4"
+                android:paddingBottom="@dimen/dim_4"
+                android:text="#order 2014" />
+
+            <TextView
+                android:id="@+id/txt_total_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dim_4"
+                android:paddingTop="@dimen/dim_4"
+                android:paddingBottom="@dimen/dim_4"
+                android:text="total 110 $" />
+
+            <TextView
+                android:id="@+id/txt_address_order_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dim_4"
+                android:paddingTop="@dimen/dim_4"
+                android:paddingBottom="@dimen/dim_4"
+                android:text="TextView" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_more_item_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:layout_weight="1"
+            android:background="@drawable/btn_splach_background"
+            android:text="recive"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_more1_item_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:layout_weight="1"
+            android:background="@drawable/btn_splach_background"
+            android:text="Button"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_more2_item_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:layout_weight="1"
+            android:background="@drawable/btn_splach_background"
+            android:text="Button"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

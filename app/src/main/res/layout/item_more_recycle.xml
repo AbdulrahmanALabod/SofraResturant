@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dim_16"
+    android:paddingBottom="@dimen/dim_16"
+    android:weightSum="1"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dim_16"
+        android:paddingEnd="@dimen/dim_35dp"
+        android:layout_marginEnd="@dimen/dim_8"
+        android:layout_toEndOf="@id/img_more_item"
+        android:layout_marginStart="-25dp">
+
+        <TextView
+            android:id="@+id/txt_more_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_16"
+            android:gravity="center"
+            android:text="get 20% for first time"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_more_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@drawable/btn_splach_background"
+            android:paddingStart="@dimen/dim_25"
+            android:paddingEnd="@dimen/dim_25"
+            android:text="get it now"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/dim_8"/>
+    </LinearLayout>
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_more_item"
+            android:layout_width="@dimen/dim_100"
+            android:layout_height="@dimen/dim_100"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:elevation="@dimen/dim_8"
+            android:src="@drawable/kfc"
+            android:layout_centerVertical="true"/>
+</RelativeLayout>

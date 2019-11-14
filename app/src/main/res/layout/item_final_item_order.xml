@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/img_final_order"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dim_150"
+        android:layout_weight="0.3"
+        tools:srcCompat="@drawable/sandwitch" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_25"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dim_16"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txt_name_final_order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="chekin frise" />
+
+            <TextView
+                android:id="@+id/txt_price_final_order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="50 $" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_16"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_quantity_item_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="@string/quantitie"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_plus_final_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dim_4"
+                android:layout_weight="0.3"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_count_final_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dim_4"
+                android:layout_weight="0.5"
+                android:background="@drawable/foodlist_item_background"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="1" />
+
+
+            <TextView
+                android:id="@+id/txt_mains_final_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_cancel_final_order"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/dim_8"
+        android:layout_weight="0.1"
+        android:background="@drawable/circle_red_small"
+        android:padding="@dimen/dim_8"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_times_solid" />
+</LinearLayout>

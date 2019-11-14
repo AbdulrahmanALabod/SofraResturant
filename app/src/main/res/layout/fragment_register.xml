@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auth"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginbackfround"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dim_8"
+            android:paddingTop="@dimen/dim_8"
+            android:paddingEnd="@dimen/dim_8">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/img_profile_signup"
+                        android:layout_width="99dp"
+                        android:layout_height="99dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dim_16"
+                        android:src="@drawable/ic_user_plus_solid"
+                        app:civ_border_width="0.5dp"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <EditText
+                        android:id="@+id/edt_name_connect_us_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_50"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:background="@null"
+                        android:drawableStart="@drawable/ic_user"
+                        android:drawablePadding="@dimen/dim_8"
+                        android:ems="10"
+                        android:hint="@string/full_name"
+                        android:inputType="text"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_1dp"
+                        android:layout_marginTop="@dimen/dim_4"
+                        android:background="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edt_email_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_50"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:background="@null"
+                        android:drawableStart="@drawable/ic_envelope_square_solid"
+                        android:drawablePadding="@dimen/dim_8"
+                        android:ems="10"
+                        android:hint="@string/e_mail"
+                        android:inputType="textEmailAddress"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_1dp"
+                        android:layout_marginTop="@dimen/dim_4"
+                        android:background="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edt_priod_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_50"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:background="@null"
+                        android:drawableStart="@drawable/ic_phone_solid"
+                        android:drawablePadding="@dimen/dim_8"
+                        android:ems="10"
+                        android:hint="@string/phone"
+                        android:inputType="number"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_1dp"
+                        android:layout_marginTop="@dimen/dim_4"
+                        android:background="@color/white" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_50"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+
+                            android:paddingEnd="@dimen/dim_50"
+                            app:srcCompat="@drawable/ic_home_solid" />
+
+                        <Spinner
+                            android:id="@+id/spin_city_signup"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_1dp"
+                        android:layout_marginTop="@dimen/dim_4"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_spin_nighbour_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_50"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:paddingEnd="@dimen/dim_50"
+                            app:srcCompat="@drawable/ic_home_solid" />
+
+                        <Spinner
+                            android:id="@+id/spin_nighbour_signup"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_spin_nighbour_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_1dp"
+                        android:layout_marginTop="@dimen/dim_4"
+                        android:background="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edt_password_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_50"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:background="@null"
+                        android:drawableStart="@drawable/ic_lock_solid"
+                        android:drawablePadding="@dimen/dim_8"
+                        android:ems="10"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_1dp"
+                        android:layout_marginTop="@dimen/dim_4"
+                        android:background="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edt_confirm_new_password_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_50"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:background="@null"
+                        android:drawableStart="@drawable/ic_lock_solid"
+                        android:drawablePadding="@dimen/dim_8"
+                        android:ems="10"
+                        android:hint="@string/cofirm_new_password"
+                        android:inputType="textPassword"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edt_minimum_price_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_50"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:background="@null"
+                        android:drawableStart="@drawable/ic_money_bill_wave_alt_solid"
+                        android:drawablePadding="@dimen/dim_8"
+                        android:ems="10"
+                        android:hint="@string/minemum_price"
+                        android:inputType="number"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edt_charger_price_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_50"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:background="@null"
+                        android:drawableStart="@drawable/ic_money_bill_wave_alt_solid"
+                        android:drawablePadding="@dimen/dim_8"
+                        android:ems="10"
+                        android:hint="@string/charger"
+                        android:inputType="number"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_1dp"
+                        android:layout_marginTop="@dimen/dim_4"
+                        android:background="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_register_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dim_25"
+                        android:background="@drawable/btn_splach_background"
+                        android:drawableStart="@drawable/ic_sign_in_alt_solid"
+                        android:drawablePadding="@dimen/dim_8"
+                        android:paddingStart="@dimen/dim_100"
+                        android:paddingEnd="@dimen/dim_100"
+                        android:text="@string/login"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/dim_16"
+    android:paddingEnd="@dimen/dim_16">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_16"
+        android:gravity="center"
+        android:text="@string/we_well_happy_if_you_write_comment"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_add_comment_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/dim_8"
+        android:background="@drawable/btn_splach_background"
+        android:paddingStart="@dimen/dim_16"
+        android:paddingEnd="@dimen/dim_16"
+        android:text="@string/add_comment_or_do_rate"
+        android:textColor="@color/white" />
+<TextView
+    android:id="@+id/txt_no_comment_rate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/there_aren_t_comments"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/dim_25"
+    android:textSize="20sp"
+    android:textColor="#000"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycl_comment_comment_rate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dim_8"/>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+<!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_weight="0.3">-->
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/img_resturant_detailes"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginTop="@dimen/dim_8"-->
+        <!--android:layout_weight="0.2"-->
+        <!--app:civ_border_width="0.4dp"-->
+        <!--android:src="@drawable/kfc" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/txt_name_rest_detailes"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="0.1"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:textStyle="bold"-->
+        <!--android:text="KFC"-->
+        <!--android:textSize="24sp"/>-->
+<!--</LinearLayout>-->
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_Layout_detailes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_16">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday" />
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_detailes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SpalchCycleActivity"
+    android:background="#e5e5e5">
+
+    <ImageView
+        android:id="@+id/img_top_splach"
+        android:layout_width="@dimen/dim_200"
+        android:layout_height="@dimen/dim_150"
+        android:layout_gravity="start|top"
+        android:paddingStart="-60dp"
+        android:src="@drawable/plantt" />
+
+    <ImageView
+        android:id="@+id/img_bottom_splach"
+        android:layout_width="@dimen/dim_200"
+        android:layout_height="@dimen/dim_150"
+        android:layout_gravity="bottom|end"
+        android:paddingStart="60dp"
+        android:src="@drawable/cropplant" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/dim_300"
+            android:layout_height="@dimen/dim_200"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="@dimen/dim_25"/>
+
+        <Button
+            android:id="@+id/btn_order_food_splach"
+            android:layout_width="@dimen/dim_300"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_25"
+            android:background="@drawable/btn_splach_background"
+            android:text="@string/btn_order_splach"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_buy_food_splach"
+            android:layout_width="@dimen/dim_300"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_marginBottom="@dimen/dim_8"
+            android:background="@drawable/btn_splach_background"
+            android:text="@string/btn_bought_food_splach"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</FrameLayout>

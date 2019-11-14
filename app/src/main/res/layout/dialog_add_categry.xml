@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/dim_8"
+    android:layout_marginEnd="@dimen/dim_8"
+    android:background="#E5E5E5"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dim_16">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_16"
+        android:gravity="center"
+        android:text="Image category"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_add_img_dialog_catgry"
+        android:layout_width="@dimen/dim_200"
+        android:layout_height="@dimen/dim_100"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dim_16"
+        android:src="@drawable/ic_plus_solid"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <EditText
+        android:id="@+id/edt_name_catgry_dialog_catgry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_16"
+        android:layout_marginEnd="@dimen/dim_16"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="@string/name_category"
+        android:inputType="textPersonName"
+        android:paddingStart="@dimen/dim_8"
+        android:paddingTop="@dimen/dim_12"
+        android:paddingBottom="@dimen/dim_12" />
+
+    <Button
+        android:id="@+id/btn_add_catgry_dialog_catgry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim_16"
+        android:background="@drawable/btn_splach_background"
+        android:paddingStart="@dimen/dim_50"
+        android:paddingEnd="@dimen/dim_50"
+        android:text="@string/add" />
+</LinearLayout>

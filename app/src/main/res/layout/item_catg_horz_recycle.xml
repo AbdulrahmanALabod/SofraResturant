@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_catg_horz"
+        android:layout_width="@dimen/dim_100"
+        android:layout_height="@dimen/dim_100"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="@dimen/dim_4"
+        app:cardElevation="@dimen/dim_1dp"
+        app:cardMaxElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_horz_catg"
+                android:layout_width="@dimen/dim_75"
+                android:layout_height="@dimen/dim_75"
+                android:scaleType="centerCrop"
+                android:src="@drawable/o"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/txt_name_horz_catg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_25"
+                android:layout_gravity="center"
+                android:text="All"
+                android:layout_below="@id/img_horz_catg"
+                android:layout_marginTop="@dimen/dim_4"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

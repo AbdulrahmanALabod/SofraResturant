@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swip_container_my_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dim_16"
+    app:dragEdge="left"
+    app:mode="same_level">
+
+    <!-- Your secondary layout here -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/img_edit_items_cat_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:paddingStart="@dimen/dim_8"
+                android:paddingEnd="@dimen/dim_8"
+                android:src="@drawable/ic_edit_solid"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/img_trash_items_cat_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dim_8"
+                android:paddingEnd="@dimen/dim_8"
+                android:src="@drawable/ic_trash_solid"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Your main layout here -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_16"
+            android:layout_marginEnd="@dimen/dim_16"
+            android:background="@drawable/edit_text_background"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dim_16"
+            android:paddingBottom="@dimen/dim_16"
+            android:weightSum="1">
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_75"
+                android:layout_weight="0.3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_cataogry_items_cat_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    app:srcCompat="@drawable/o" />
+
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dim_8"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_name_items_cat_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Pizza"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_desc_items_cat_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Pizza"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/dim_4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/price"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_price_cat_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="20" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

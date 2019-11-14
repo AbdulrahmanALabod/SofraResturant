@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_solid"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_clipboard_list_solid_white"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_personal"
+        android:icon="@drawable/ic_user"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/ic_ellipsis_h_solid"
+        android:title="" />
+
+</menu>

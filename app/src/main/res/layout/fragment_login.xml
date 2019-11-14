@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auth"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginbackfround"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dim_16"
+            android:paddingTop="@dimen/dim_16"
+            android:paddingEnd="@dimen/dim_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_25"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_wrong_enter_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_25"
+                android:text="@string/maby_account_pass_wrong"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edt_email_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:drawableStart="@drawable/ic_envelope_square_solid"
+                android:drawablePadding="@dimen/dim_8"
+                android:ems="10"
+                android:hint="@string/e_mail"
+                android:inputType="textEmailAddress"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/edt_password_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_25"
+                android:drawableStart="@android:drawable/ic_lock_idle_lock"
+                android:drawablePadding="@dimen/dim_8"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_forget_pass_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/dim_4"
+                android:text="@string/are_you_forget_your_password"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_login_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_50"
+                android:background="@drawable/btn_splach_background"
+                android:drawableStart="@drawable/ic_sign_in_alt_solid"
+                android:drawablePadding="@dimen/dim_8"
+                android:paddingStart="@dimen/dim_100"
+                android:paddingEnd="@dimen/dim_100"
+                android:text="@string/login"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_signup_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/dim_50"
+                android:background="#876274"
+                android:gravity="center"
+                android:text="@string/you_don_t_have_account_press_here"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

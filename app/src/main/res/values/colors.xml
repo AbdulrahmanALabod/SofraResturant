@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F5F5F5</color>
+    <color name="colorPrimaryDark">#F5F5F5</color>
+    <color name="colorAccent">#D81B60</color>
+        <color name="textColorSecndry">#BE5E6A</color>
+    <color name="windowBackground">#fff</color>
+    <color name="windowForground"></color>
+    <color name="navigationBarClor">#c21b4f</color>
+    <color name="colorSecondry">#B1124C</color>
+    <!-- app-->
+    <color name="greylight">#D3D3D3</color>
+    <color name="grey">#BEBEBE</color>
+    <color name="red">#F00000</color>
+    <color name="green">#00CC33</color>
+    <color name="reddark">#300000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue_black">#003366</color>
+    <color name="black">#000</color>
+    <color name="third_color_text">#25033F</color>
+    <color name="pampy">#240040</color>
+
+</resources>

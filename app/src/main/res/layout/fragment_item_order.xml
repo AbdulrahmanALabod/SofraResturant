@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dim_16"
+        android:paddingTop="@dimen/dim_8"
+        android:paddingEnd="@dimen/dim_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="@dimen/dim_8"
+                    android:elevation="@dimen/dim_4">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:id="@+id/img_food_recycl_food"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dim_120"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/logo" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/dim_8"
+                            android:paddingStart="@dimen/dim_8"
+                            android:paddingEnd="@dimen/dim_8"
+                            >
+                            <TextView
+                                android:id="@+id/txt_name_recycl_food"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:text="fjsfjmdksfgdl;s"
+                                android:textSize="18sp"
+                                android:textColor="@color/colorAccent"
+                                />
+                            <TextView
+                                android:id="@+id/txt_desc_recycl_food"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="card_content"
+                                android:textColor="#555" />
+                            <TextView
+                                android:id="@+id/txt_price_recycl_food"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="card_content"
+                                android:textColor="#555" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_time_item_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                tools:text="time for order is 20 menuts" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dim_16"
+                android:background="@color/grey"
+                android:text="" />
+
+            <TextView
+                 android:id="@+id/txt_special_item_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:text="@string/special_order" />
+
+            <EditText
+                android:id="@+id/edt_notes_item_order"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/dim_16"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/dim_8"
+                android:hint="@string/enter_your_order" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dim_16"
+                android:background="@color/grey"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="center"
+                >
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="0.4"-->
+                    <!--android:text="@string/quantitie"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textStyle="bold" -->
+                    <!--android:layout_marginEnd="@dimen/dim_16"/>-->
+
+                <TextView
+                    android:id="@+id/txt_plus_item_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dim_4"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:text="@string/plus"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_counter_item_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dim_4"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/foodlist_item_background"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="1" />
+
+
+                <TextView
+                    android:id="@+id/txt_mains_item_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_cart_item_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_16"
+                android:background="@drawable/circle_red_small"
+                android:padding="@dimen/dim_12"
+                app:srcCompat="@drawable/ic_shopping_cart_solid_white" />
+        </LinearLayout>
+    </ScrollView>
